@@ -8,8 +8,11 @@ namespace Lessons.DependencyInjection
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            Console.WriteLine(rect.RenderShape());
+            Console.WriteLine(trian.RenderShape());
         }
     }
 }
