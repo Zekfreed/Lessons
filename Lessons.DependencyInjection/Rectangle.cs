@@ -10,7 +10,7 @@ namespace Lessons.DependencyInjection
     {
         public void Display()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("rectangle");
         }
     }
 }
