@@ -8,12 +8,16 @@ namespace Lessons.DependencyInjection
 {
     public class ShapeRenderer
     {
+        private readonly IShape _shape;
+        public ShapeRenderer(IShape shape)
+        {
+            _shape = shape;
+        }
 
 
         public void RenderShape()
         {
-            var rect = new Rectangle();
-            rect.Display();
+            _shape.Display();
         }
     }
 }
