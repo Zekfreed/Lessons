@@ -11,8 +11,24 @@ namespace Lessons.DependencyInjection
 
         static void Main(string[] args)
         {
-            Console.WriteLine(rect.RenderShape());
-            Console.WriteLine(trian.RenderShape());
+            IShape tr = new Triangle();
+
+            var renderer1 = CreateRenderer(tr);
+
+            IShape rect = new Rectangle();
+
+            var renderer2 = CreateRenderer(rect);
+
+            renderer1.RenderShape();
+
+            renderer2.RenderShape();
+
+            Console.ReadLine();
+        }
+
+        private static ShapeRenderer CreateRenderer(IShape shape)
+        {
+            return new ShapeRenderer(shape);
         }
     }
 }
