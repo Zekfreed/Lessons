@@ -9,8 +9,11 @@ namespace Lessons.DependencyInjection
     public class ShapeRenderer
     {
 
+
         public void RenderShape()
         {
+            var rect = new Rectangle();
+            rect.Display();
         }
     }
 }
