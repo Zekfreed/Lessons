@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFF21FFB-DFB6-435B-AF89-EB8BDDA1B18D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Lessons.DependencyInjection</RootNamespace>
-    <AssemblyName>Lessons.DependencyInjection</AssemblyName>
+    <ProjectGuid>{A475D53B-D269-4D60-A8D7-EF436701C5E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lesson.PersonPersistence.Json</RootNamespace>
+    <AssemblyName>Lesson.PersonPersistence.Json</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,10 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,38 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IShape.cs" />
-    <Compile Include="PersonManagement\Director.cs" />
-    <Compile Include="PersonManagement\PersonManager.cs" />
-    <Compile Include="PersonManagement\Student.cs" />
-    <Compile Include="PersonManagement\Teacher.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="JsonPersonPersister.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="Setup.cs" />
-    <Compile Include="ShapeRenderer.cs" />
-    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lessons.ReferencedClassLibrary\Lessons.ReferencedClassLibrary.csproj">
+    <ProjectReference Include="..\..\Lessons.ReferencedClassLibrary\Lessons.ReferencedClassLibrary.csproj">
       <Project>{ef77d4aa-a349-4ec8-9c48-da26d9529327}</Project>
       <Name>Lessons.ReferencedClassLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="Lesson.PersonPersistence.Json\Lesson.PersonPersistence.Json.csproj">
-      <Project>{a475d53b-d269-4d60-a8d7-ef436701c5e8}</Project>
-      <Name>Lesson.PersonPersistence.Json</Name>
-    </ProjectReference>
-    <ProjectReference Include="Lessons.DependencyInjection.IoC\Lessons.DependencyInjection.IoC.csproj">
-      <Project>{83ab46e4-d296-45a6-98bf-6de53348df06}</Project>
-      <Name>Lessons.DependencyInjection.IoC</Name>
-    </ProjectReference>
-    <ProjectReference Include="Lessons.PersonPersistence.Xml\Lessons.PersonPersistence.Xml.csproj">
-      <Project>{f448209a-8356-465e-9b24-298d49338b93}</Project>
-      <Name>Lessons.PersonPersistence.Xml</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
