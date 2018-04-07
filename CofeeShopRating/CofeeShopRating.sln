@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercice1_netcore", "exercice1_netcore\exercice1_netcore.csproj", "{404F3569-F2F1-40DC-998D-793309840305}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CofeeShopRating", "CofeeShopRating\CofeeShopRating.csproj", "{F8B72EBD-8075-4862-B6FD-07FEC551FCF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{404F3569-F2F1-40DC-998D-793309840305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{404F3569-F2F1-40DC-998D-793309840305}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{404F3569-F2F1-40DC-998D-793309840305}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{404F3569-F2F1-40DC-998D-793309840305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B72EBD-8075-4862-B6FD-07FEC551FCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B72EBD-8075-4862-B6FD-07FEC551FCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B72EBD-8075-4862-B6FD-07FEC551FCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B72EBD-8075-4862-B6FD-07FEC551FCF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A1334D2E-2BF3-4797-AA8A-D014A2B74868}
+		SolutionGuid = {788B8DC9-5735-4A87-A5E4-8892AAEFC18E}
 	EndGlobalSection
 EndGlobal

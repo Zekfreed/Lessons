@@ -9,11 +9,16 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.2" />
   </ItemGroup>
 
-	<ItemGroup>
-		<DotNetClitoolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
-	</ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Data\" />
+		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
 	</ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
