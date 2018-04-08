@@ -6,10 +6,10 @@ using CofeeShopRating.Models;
 
 namespace CofeeShopRating.Services
 {
-    public interface ICofeeData
+    public interface ICofeeManager
     {
         IEnumerable<Cofee> GetAll();
         Cofee Get(int id);
-        Cofee Add(Cofee restaurant);
+        Cofee Create(Cofee restaurant);
     }
 }

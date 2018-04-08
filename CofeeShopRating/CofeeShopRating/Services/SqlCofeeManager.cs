@@ -7,15 +7,15 @@ using CofeeShopRating.Models;
 
 namespace CofeeShopRating.Services
 {
-    public class SqlCofeeData : ICofeeData
+    public class SqlCofeeManager : ICofeeManager
     {
-        private CofeeRatingDbContext _dbContext;
+        private readonly CofeeRatingDbContext _dbContext;
 
-        public SqlCofeeData(CofeeRatingDbContext dbContext)
+        public SqlCofeeManager(CofeeRatingDbContext dbContext)
         {
             _dbContext = dbContext;
         }
-        public Cofee Add(Cofee cofee)
+        public Cofee Create(Cofee cofee)
         {
             _dbContext.Cofees.Add(cofee);
             _dbContext.SaveChanges();
